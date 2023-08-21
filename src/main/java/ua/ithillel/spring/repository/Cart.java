@@ -21,7 +21,7 @@ public class Cart {
         cartList.add(productRepository.getById(id));
     }
 
-    public void removeItem(long id) {
+    public void removeById(long id) {
         for (Product prod : cartList) {
             if (prod.getId() == id) {
                 cartList.remove(id);
@@ -30,6 +30,12 @@ public class Cart {
         }
     }
 
+    public void displayCart() {
+        System.out.println("Cart list:");
+        for (Product product : cartList) {
+            System.out.println(product.getName() + " - $" + product.getPrice());
+        }
+    }
 
     public ProductRepository getProductRepository() {
         return productRepository;

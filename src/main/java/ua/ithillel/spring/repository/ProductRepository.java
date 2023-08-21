@@ -18,8 +18,18 @@ public class ProductRepository {
     public void init() {
 
         productList.add(new Product(1, "Product 1", 10.0));
-        productList.add(new Product(2, "Product 2", 20.0));
+        productList.add(new Product(2, "Product 2", 19.0));
+        productList.add(new Product(3, "Product 3", 23.0));
+        productList.add(new Product(4, "Product 4", 9.0));
+        productList.add(new Product(5, "Product 5", 11.0));
+        productList.add(new Product(6, "Product 6", 57.0));
+        productList.add(new Product(7, "Product 7", 33.0));
+        productList.add(new Product(8, "Product 8", 8.0));
 
+    }
+
+    public ProductRepository() {
+        init();
     }
 
     public Product getById(long id) {
