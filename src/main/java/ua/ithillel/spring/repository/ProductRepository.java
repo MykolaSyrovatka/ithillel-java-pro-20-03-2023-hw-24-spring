@@ -1,6 +1,7 @@
 package ua.ithillel.spring.repository;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import ua.ithillel.spring.Product;
 
 import java.util.ArrayList;
